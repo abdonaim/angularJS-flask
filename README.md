@@ -30,13 +30,6 @@ A template for building apps with an Angular frontend and a Flask / python backe
 
 ### How to Get Started
 
-
-# AngularJS + Flask Boilerplate App
-
-A template for building apps with an Angular frontend and a Flask / python backend.
-
-### How to Get Started
-
 1. clone this repo
 
 2. install all the necessary packages (best done inside of a virtual environment)
