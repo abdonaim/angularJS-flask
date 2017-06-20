@@ -1,5 +1,5 @@
 ### Updating the shea256/angular-flask application
-The original code for the angular-flask application, https://github.com/shea256/angular-flask, is not compatible with the more recent versions of angular and the new JSON API media type, as of June, 2017.
+This fork was created because the original code for the angular-flask application, https://github.com/shea256/angular-flask, is not compatible with the more recent versions of angular and the new JSON API media type, as of June, 2017.
 
 This fork includes more recent versions of the following packages:
 +  angular-1.6.4
