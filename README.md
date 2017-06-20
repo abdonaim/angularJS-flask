@@ -15,11 +15,11 @@ Summary of code changes:
    revised
 3. templates/index.html:
    revised to include angular-route.js
-4. static/js/app.js
+4. static/js/app.js:
    revised to include the ngRoute package, which is needed for $routeProvider
-5. static/js/services.js
+5. static/js/services.js:
    revised the Post factory object to conform to the JSON API media type.
-6. static/js/controllers.js
+6. static/js/controllers.js:
    revised to format the result of the Post query properly for display.
 
 The following is from the README for the original application.
