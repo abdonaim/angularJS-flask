@@ -2,18 +2,16 @@ import os
 import json
 import argparse
 import requests
-
 from angular_flask.core import db
 from angular_flask.models import Post
-
 
 def create_sample_db_entry(api_endpoint, payload):
     url = 'http://localhost:5000/' + api_endpoint
     r = requests.post(
         url, data=json.dumps(payload),
-        headers={'Content-Type': 'application/json'})
+        headers={'Content-Type': 'application/vnd.api+json',
+                 'Accept' : 'application/vnd.api+json'})
     print r.text
-
 
 def create_db():
     db.create_all()
@@ -21,6 +19,15 @@ def create_db():
 
 def drop_db():
     db.drop_all()
+
+
+def test_db():
+    url = 'http://localhost:5000/api/post'
+    r = requests.get(url,
+        headers={'Content-Type': 'application/vnd.api+json',
+                 'Accept' : 'application/vnd.api+json'})
+    print r.text
+    return
 
 
 def main():
@@ -46,12 +53,12 @@ def main():
 
         for item_class in seed_data:
             items = seed_data[item_class]
-            print items
             for item in items:
-                print item
                 create_sample_db_entry('api/' + item_class, item)
 
         print "\nSample data added to database!"
+    elif args.command == 'test':
+        test_db()
     else:
         raise Exception('Invalid command')
 
