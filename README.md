@@ -21,7 +21,7 @@ Summary of code changes:
    revised the Post factory object to conform to the JSON API media type.
 6. static/js/controllers.js:
    revised to format the result of the Post query properly for display.
-7. HTML 5 mode for AngularJS routing:
+7. HTML5 mode for AngularJS routing:
    see https://stackoverflow.com/questions/16677528/location-switching-between-html5-and-hashbang-mode-link-rewriting
 
 The following is from the README for the original application.
