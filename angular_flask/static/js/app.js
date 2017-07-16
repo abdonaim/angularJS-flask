@@ -31,6 +31,6 @@ angular.module('AngularFlask', ['ngRoute', 'angularFlaskServices'])
 		;
 
 		$locationProvider.html5Mode(true);
-        $locationProvider.hashPrefix('');
+		$locationProvider.hashPrefix('');
 	}])
 ;
