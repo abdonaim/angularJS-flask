@@ -41,7 +41,7 @@ A template for building apps with an Angular frontend and a Flask / python backe
 > python runserver.py
 
 4. create and seed the db (the server must still be running, so open a new terminal window first)
-> python manage.py create_db && python manage.py seed_db --seedfile 'data/db_items.json'
+> python manage.py create_db && python manage.py seed_db --seedfile ./data/db_items.json
 
 5. check out your blog
 > http://localhost:5000/blog
